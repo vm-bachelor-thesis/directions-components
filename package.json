@@ -1,0 +1,25 @@
+{
+  "name": "describe-this-place-components",
+  "version": "0.0.1",
+  "description": "React components for Describe This Place apps.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build"
+  },
+  "author": "Viktor Mörsell <morsell@kth.se>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "@types/react": "^16.9.34",
+    "@types/react-native": "^0.62.7",
+    "react": "^16.13.1",
+    "react-native": "^0.62.2",
+    "typescript": "^3.8.3"
+  }
+}
