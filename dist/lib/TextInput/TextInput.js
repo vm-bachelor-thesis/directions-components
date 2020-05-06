@@ -12,7 +12,7 @@ var __rest = (this && this.__rest) || function (s, e) {
 import React from 'react';
 import { TextInput as RNTextInput, StyleSheet, } from 'react-native';
 import { templates, calculateHeight } from './templates';
-import * as theme from '../theme';
+import * as theme from '../../theme';
 export var TextInput = function (_a) {
     var placeholder = _a.placeholder, _b = _a.lines, lines = _b === void 0 ? 1 : _b, style = _a.style, rest = __rest(_a, ["placeholder", "lines", "style"]);
     var height = lines > 1 ? calculateHeight(lines) : 'auto';

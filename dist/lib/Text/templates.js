@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import * as theme from '../theme';
+import * as theme from '../../theme';
 export var templates = StyleSheet.create({
     default: {
         color: theme.colors.text,

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Switch } from 'react-native';
-import { View, Text, Divider, TextInput, ActionSheetInput } from '..';
+import { View, Text, Divider, TextInput, ActionSheetInput } from '../..';
 import { FormRow } from '../FormRow/FormRow';
 export var CharacteristicsQuestionnaire = function (_a) {
     var callback = _a.callback;

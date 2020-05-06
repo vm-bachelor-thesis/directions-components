@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import * as theme from '../theme';
+import * as theme from '../../theme';
 
 export const templates = StyleSheet.create({
   containerView: {

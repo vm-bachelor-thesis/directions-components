@@ -2,8 +2,8 @@
   "name": "directions-components",
   "version": "0.0.1",
   "description": "React components for Directions apps.",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/lib/index.js",
+  "types": "./dist/lib/index.d.ts",
   "files": [
     "dist/**/*"
   ],

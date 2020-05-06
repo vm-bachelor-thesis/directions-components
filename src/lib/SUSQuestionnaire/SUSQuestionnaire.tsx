@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from 'react-native';
-import { View, Text, Divider, ActionSheetInput } from '../';
+import { View, Text, Divider, ActionSheetInput } from '../..';
 import { FormRow } from '../FormRow/FormRow';
 import { questions } from './questions';
 

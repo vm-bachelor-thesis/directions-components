@@ -5,7 +5,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import { templates, calculateHeight } from './templates';
-import * as theme from '../theme';
+import * as theme from '../../theme';
 
 export interface TextInputProps extends RNTextInputProps {
   placeholder: string;

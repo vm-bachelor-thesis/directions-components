@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Divider, Text } from '..';
+import { View, Divider, Text } from '../..';
 
 export interface CompletedMessageProps {
   message?: Object | undefined;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Divider, Text } from '..';
+import { View, Divider, Text } from '../..';
 export var CompletedMessage = function (_a) {
     var _b = _a.message, message = _b === void 0 ? undefined : _b;
     return (<View type="container">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { View, Text } from '../';
+import { View, Text } from '../..';
 import { templates } from './templates';
 
 export interface FormRowProps {

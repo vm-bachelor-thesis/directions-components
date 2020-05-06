@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import * as theme from '../theme';
+import * as theme from '../../theme';
 export var calculateHeight = function (lines) {
     return lines * theme.layout.fontSize + theme.layout.baseMargin / 1.5;
 };

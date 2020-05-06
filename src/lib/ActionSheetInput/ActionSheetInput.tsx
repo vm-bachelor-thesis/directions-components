@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ActionSheetIOS, TouchableWithoutFeedback } from 'react-native';
-import { Text } from '..';
+import { Text } from '../..';
 import { templates } from './templates';
 
 export interface ActionSheetInputProps {

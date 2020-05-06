@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { View, Text } from '../';
+import { View, Text } from '../..';
 import { templates } from './templates';
 export var FormRow = function (_a) {
     var title = _a.title, inputComponent = _a.inputComponent, _b = _a.wideTitle, wideTitle = _b === void 0 ? false : _b;

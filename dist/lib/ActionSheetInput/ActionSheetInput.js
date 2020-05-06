@@ -18,7 +18,7 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
 };
 import React, { useState } from 'react';
 import { ActionSheetIOS, TouchableWithoutFeedback } from 'react-native';
-import { Text } from '..';
+import { Text } from '../..';
 import { templates } from './templates';
 export var ActionSheetInput = function (_a) {
     var title = _a.title, placeholder = _a.placeholder, options = _a.options, values = _a.values, onValueChange = _a.onValueChange, rest = __rest(_a, ["title", "placeholder", "options", "values", "onValueChange"]);
