@@ -1,7 +1,7 @@
 {
-  "name": "describe-this-place-components",
+  "name": "directions-components",
   "version": "0.0.1",
-  "description": "React components for Describe This Place apps.",
+  "description": "React components for Directions apps.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -17,8 +17,10 @@
   "devDependencies": {
     "@types/node": "^13.13.4",
     "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
     "@types/react-native": "^0.62.7",
     "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-native": "^0.62.2",
     "typescript": "^3.8.3"
   }
