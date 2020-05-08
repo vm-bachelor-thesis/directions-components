@@ -63,8 +63,8 @@ export var SUSQuestionnaire = function (_a) {
       <Text type="header">System Usability Scale</Text>
 
       <Text type="onGrayBackground" margin="bottom+horizontal">
-        Dessa uppgifter samlas in för att säkerställa att vi får en varierad
-        grupp personer som besvarar undersökningen.
+        System Usability Scale används för att mäta en användares upplevelse av
+        en teknisk produkt. Alla frågor är obligatoriska.
       </Text>
 
       <View padding="horizontal" borderTopBottom={true}>

@@ -2,6 +2,9 @@ export declare const templates: {
     default: {
         backgroundColor: string;
     };
+    backgroundGray: {
+        backgroundColor: string;
+    };
     paddingRight: {
         paddingRight: number;
     };

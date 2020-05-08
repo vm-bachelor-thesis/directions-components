@@ -13,10 +13,11 @@ import React from 'react';
 import { View as RNView, SafeAreaView, ScrollView, StyleSheet, } from 'react-native';
 import { templates } from './templates';
 export var View = function (_a) {
-    var _b = _a.type, type = _b === void 0 ? 'default' : _b, _c = _a.padding, padding = _c === void 0 ? 'none' : _c, _d = _a.borderTopBottom, borderTopBottom = _d === void 0 ? false : _d, style = _a.style, children = _a.children, rest = __rest(_a, ["type", "padding", "borderTopBottom", "style", "children"]);
+    var _b = _a.type, type = _b === void 0 ? 'default' : _b, _c = _a.background, background = _c === void 0 ? 'white' : _c, _d = _a.padding, padding = _d === void 0 ? 'none' : _d, _e = _a.borderTopBottom, borderTopBottom = _e === void 0 ? false : _e, style = _a.style, children = _a.children, rest = __rest(_a, ["type", "background", "padding", "borderTopBottom", "style", "children"]);
     var flattenedStyle = StyleSheet.flatten([
         templates.default,
         type === 'container' && templates.container,
+        background === 'gray' && templates.backgroundGray,
         (padding === 'all' || padding === 'vertical') && templates.paddingVertical,
         (padding === 'all' || padding === 'horizontal') &&
             templates.paddingHorizontal,

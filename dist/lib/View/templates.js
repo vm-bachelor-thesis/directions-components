@@ -4,6 +4,9 @@ export var templates = StyleSheet.create({
     default: {
         backgroundColor: theme.colors.backgroundWhite,
     },
+    backgroundGray: {
+        backgroundColor: theme.colors.backgroundGray,
+    },
     paddingRight: {
         paddingRight: theme.layout.baseMargin,
     },
