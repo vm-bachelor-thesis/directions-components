@@ -93,8 +93,8 @@ export const SUSQuestionnaire = ({ callback }: SUSQuestionnaireProps) => {
       <Text type="header">System Usability Scale</Text>
 
       <Text type="onGrayBackground" margin="bottom+horizontal">
-        System Usability Scale används för att mäta en användares upplevelse av
-        en teknisk produkt. Alla frågor är obligatoriska.
+        Dessa frågor används för att mäta en användares upplevelse av en teknisk
+        produkt.
       </Text>
 
       <View padding="horizontal" borderTopBottom={true}>
