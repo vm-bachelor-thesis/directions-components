@@ -10,6 +10,7 @@ import { templates } from './templates';
 
 export interface ViewProps extends RNViewProps {
   children: React.ReactNode;
+  background?: 'white' | 'gray';
   type?: 'default' | 'container';
   padding?: 'all' | 'horizontal' | 'vertical' | 'right' | 'none';
   borderTopBottom?: boolean;
@@ -17,6 +18,7 @@ export interface ViewProps extends RNViewProps {
 
 export const View = ({
   type = 'default',
+  background = 'white',
   padding = 'none',
   borderTopBottom = false,
   style,
@@ -26,6 +28,7 @@ export const View = ({
   const flattenedStyle = StyleSheet.flatten([
     templates.default,
     type === 'container' && templates.container,
+    background === 'gray' && templates.backgroundGray,
     (padding === 'all' || padding === 'vertical') && templates.paddingVertical,
     (padding === 'all' || padding === 'horizontal') &&
       templates.paddingHorizontal,
