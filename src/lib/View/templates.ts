@@ -36,4 +36,7 @@ export const templates = StyleSheet.create({
   scrollViewComponent: {
     flex: 1,
   },
+  keyboardAvoidingView: {
+    flex: 1,
+  },
 });

@@ -5,6 +5,8 @@ import {
   SafeAreaView,
   ScrollView,
   StyleSheet,
+  KeyboardAvoidingView,
+  Platform,
 } from 'react-native';
 import { templates } from './templates';
 
@@ -39,9 +41,14 @@ export const View = ({
 
   if (type === 'container') {
     return (
-      <SafeAreaView style={flattenedStyle} {...rest}>
-        <ScrollView>{children}</ScrollView>
-      </SafeAreaView>
+      <KeyboardAvoidingView
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        style={templates.keyboardAvoidingView}
+      >
+        <SafeAreaView style={flattenedStyle} {...rest}>
+          <ScrollView>{children}</ScrollView>
+        </SafeAreaView>
+      </KeyboardAvoidingView>
     );
   }
 
