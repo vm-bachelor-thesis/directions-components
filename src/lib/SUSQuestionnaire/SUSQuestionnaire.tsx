@@ -45,6 +45,7 @@ export const SUSQuestionnaire = ({ callback }: SUSQuestionnaireProps) => {
             <ActionSheetInput
               title={question}
               placeholder="3"
+              textAlign="right"
               options={[
                 '5 Instämmer helt',
                 '4',

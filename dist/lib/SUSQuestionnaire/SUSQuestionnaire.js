@@ -29,7 +29,7 @@ export var SUSQuestionnaire = function (_a) {
     ];
     var _m = useState(false), allowSubmit = _m[0], setAllowSubmit = _m[1];
     var questionComponents = questions.map(function (question, index) { return (<React.Fragment key={index}>
-        <FormRow title={question} wideTitle={true} inputComponent={<ActionSheetInput title={question} placeholder="3" options={[
+        <FormRow title={question} wideTitle={true} inputComponent={<ActionSheetInput title={question} placeholder="3" textAlign="right" options={[
         '5 Instämmer helt',
         '4',
         '3',
