@@ -33,4 +33,7 @@ export declare const templates: {
     scrollViewComponent: {
         flex: number;
     };
+    keyboardAvoidingView: {
+        flex: number;
+    };
 };

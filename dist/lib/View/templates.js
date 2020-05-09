@@ -35,5 +35,8 @@ export var templates = StyleSheet.create({
     scrollViewComponent: {
         flex: 1,
     },
+    keyboardAvoidingView: {
+        flex: 1,
+    },
 });
 //# sourceMappingURL=templates.js.map
