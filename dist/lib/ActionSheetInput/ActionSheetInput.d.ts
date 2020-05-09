@@ -4,6 +4,7 @@ export interface ActionSheetInputProps {
     placeholder: string;
     options: string[];
     values?: string[];
+    textAlign?: 'left' | 'right';
     onValueChange: (value: string) => void;
 }
-export declare const ActionSheetInput: ({ title, placeholder, options, values, onValueChange, ...rest }: ActionSheetInputProps) => JSX.Element;
+export declare const ActionSheetInput: ({ title, placeholder, options, values, textAlign, onValueChange, ...rest }: ActionSheetInputProps) => JSX.Element;

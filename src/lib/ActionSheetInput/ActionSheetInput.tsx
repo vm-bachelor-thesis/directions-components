@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
-import { ActionSheetIOS, TouchableWithoutFeedback } from 'react-native';
+import {
+  ActionSheetIOS,
+  View,
+  TouchableWithoutFeedback,
+  StyleSheet,
+} from 'react-native';
 import { Text } from '../..';
-import { templates } from './templates';
+import * as templates from './templates';
 
 export interface ActionSheetInputProps {
   title: string;
   placeholder: string;
   options: string[];
   values?: string[];
+  textAlign?: 'left' | 'right';
   onValueChange: (value: string) => void;
 }
 
@@ -16,6 +22,7 @@ export const ActionSheetInput = ({
   placeholder,
   options,
   values,
+  textAlign = 'left',
   onValueChange,
   ...rest
 }: ActionSheetInputProps) => {
@@ -43,11 +50,17 @@ export const ActionSheetInput = ({
     openActionSheet();
   };
 
+  const flattenedStyle = StyleSheet.flatten([
+    templates.text.default,
+    !value && templates.text.placeholder,
+    textAlign === 'right' && templates.text.textAlignRight,
+  ]);
+
   return (
     <TouchableWithoutFeedback onPress={handlePress} {...rest}>
-      <Text style={!value && templates.placeholder}>
-        {value ? value : placeholder}
-      </Text>
+      <View style={templates.touchable.default}>
+        <Text style={flattenedStyle}>{value ? value : placeholder}</Text>
+      </View>
     </TouchableWithoutFeedback>
   );
 };

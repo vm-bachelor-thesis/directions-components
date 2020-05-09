@@ -17,12 +17,12 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
     return r;
 };
 import React, { useState } from 'react';
-import { ActionSheetIOS, TouchableWithoutFeedback } from 'react-native';
+import { ActionSheetIOS, View, TouchableWithoutFeedback, StyleSheet, } from 'react-native';
 import { Text } from '../..';
-import { templates } from './templates';
+import * as templates from './templates';
 export var ActionSheetInput = function (_a) {
-    var title = _a.title, placeholder = _a.placeholder, options = _a.options, values = _a.values, onValueChange = _a.onValueChange, rest = __rest(_a, ["title", "placeholder", "options", "values", "onValueChange"]);
-    var _b = useState(), value = _b[0], setValue = _b[1];
+    var title = _a.title, placeholder = _a.placeholder, options = _a.options, values = _a.values, _b = _a.textAlign, textAlign = _b === void 0 ? 'left' : _b, onValueChange = _a.onValueChange, rest = __rest(_a, ["title", "placeholder", "options", "values", "textAlign", "onValueChange"]);
+    var _c = useState(), value = _c[0], setValue = _c[1];
     var openActionSheet = function () {
         ActionSheetIOS.showActionSheetWithOptions({
             options: __spreadArrays(options, ['Avbryt']),
@@ -39,10 +39,15 @@ export var ActionSheetInput = function (_a) {
     var handlePress = function () {
         openActionSheet();
     };
+    var flattenedStyle = StyleSheet.flatten([
+        templates.text.default,
+        !value && templates.text.placeholder,
+        textAlign === 'right' && templates.text.textAlignRight,
+    ]);
     return (<TouchableWithoutFeedback onPress={handlePress} {...rest}>
-      <Text style={!value && templates.placeholder}>
-        {value ? value : placeholder}
-      </Text>
+      <View style={templates.touchable.default}>
+        <Text style={flattenedStyle}>{value ? value : placeholder}</Text>
+      </View>
     </TouchableWithoutFeedback>);
 };
 //# sourceMappingURL=ActionSheetInput.js.map
